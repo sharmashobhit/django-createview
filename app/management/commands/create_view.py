@@ -17,7 +17,6 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('view_name', nargs='+', type=str)
-        parser.add_argument('url_name', nargs="+", type=str)
         # Named (optional) arguments
         parser.add_argument('--type', '-t',
             action='store',
